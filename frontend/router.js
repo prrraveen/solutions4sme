@@ -11,7 +11,14 @@ function(
         },
 
         home: function(){
-            return
+            require(['apps/home/views/navigation',
+                    'apps/home/views/landing',
+            ],function(Navigation,
+                       Landing
+            ){
+                app.layout.navigation.empty();
+                app.layout.main_region.show(new Landing())
+            })
         },
     })
     return Router;

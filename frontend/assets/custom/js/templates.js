@@ -1,20 +1,20 @@
 this["JST"] = this["JST"] || {};
 
-this["JST"]["layout"] = function(obj) {
+this["JST"]["landing"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<div id=\'navigation\'></div>\n<div id=\'main\'></div>\n';
+__p += 'hello\n';
 
 }
 return __p
 };
 
-this["JST"]["left_bar"] = function(obj) {
+this["JST"]["layout"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<aside class="main-sidebar">\n  <!-- sidebar: style can be found in sidebar.less -->\n  <section class="sidebar">\n    <!-- Sidebar user panel -->\n    <!-- sidebar menu: : style can be found in sidebar.less -->\n    <ul class="sidebar-menu">\n      <li class="header">MAIN NAVIGATION</li>\n      <li>\n        <a href="#orders/Received">\n          <i class="fa fa-th"></i> <span>New Orders</span> <small class="label pull-right bg-green">new</small>\n        </a>\n      </li>\n      <li>\n          <a href="#orders/Confirmed">\n            <i class="fa fa-th"></i> <span>Confirmed</span>\n          </a>\n      </li>\n      <li>\n          <a href="#orders/Allocated">\n            <i class="fa fa-th"></i> <span>Allocated</span>\n          </a>\n      </li>\n      <li>\n          <a href="#orders/Delievered">\n            <i class="fa fa-th"></i> <span>Completed</span>\n          </a>\n      </li>\n      <li>\n          <a href="#orders/all">\n            <i class="fa fa-th"></i> <span>All</span>\n          </a>\n      </li>\n      <li>\n          <a href="#lead">\n            <i class="fa fa-th"></i> <span>Leads</span>\n          </a>\n      </li>\n      <li>\n          <a href="/admin/agent/order/">\n            <i class="fa fa-th"></i> <span>Edit Order Details</span>\n          </a>\n      </li>\n      <li>\n          <a href="/admin/agent/beautician/">\n            <i class="fa fa-th"></i> <span>Beauticians</span>\n          </a>\n      </li>\n      <li>\n          <a href="/admin/agent/service/">\n            <i class="fa fa-th"></i> <span>Services</span>\n          </a>\n      </li>\n    </ul>\n  </section>\n  <!-- /.sidebar -->\n</aside>\n';
+__p += '<div id=\'navigation\'></div>\n<div id=\'main\'></div>\n';
 
 }
 return __p

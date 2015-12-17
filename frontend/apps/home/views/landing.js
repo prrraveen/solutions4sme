@@ -4,13 +4,11 @@ define([
 ],
 function(
         Mn,
-        User,
-        Bootstrap,
-        Offcanvas
+        User
 ) {
     var Navigation = Mn.ItemView.extend({
         model: new User(),
-        template: JST['navigation'],
+        template: JST['landing'],
         templateHelpers: function() {
             return { user : this.model};
         },
