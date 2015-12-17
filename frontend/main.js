@@ -5,6 +5,7 @@ require.config({
         backbone:   'assets/libs/backbone/backbone',
         marionette: 'assets/libs/backbone.marionette/lib/backbone.marionette',
         bootstrap:  'assets/libs/bootstrap/dist/js/bootstrap',
+        templates:  'assets/custom/js/templates',
     },
     shim: {
         'backbone': {
@@ -26,4 +27,33 @@ require.config({
     },
 
     urlArgs: "bust=" + (new Date()).getTime()
+});
+
+
+require(['marionette',
+         'router',
+         'layout'
+],
+function (  Mn,
+            Router,
+            Layout
+) {
+    // Create our Application
+    window.app = {};
+    window.app = new Mn.Application();
+
+    app.on("before:start", function(){
+        app.router = new Router();
+    });
+
+    app.addInitializer(function(){
+        // Render the layout and get it on the screen, first
+        app.layout = new Layout();
+        var layout_render = app.layout.render();
+        $('body').prepend(app.layout.el);
+
+        Backbone.history.start();
+    })
+
+    app.start();
 });
