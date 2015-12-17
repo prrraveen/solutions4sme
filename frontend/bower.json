@@ -1,0 +1,27 @@
+{
+  "name": "frontend",
+  "authors": [
+    "Praveen <prrraveen@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/assets/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "backbone": "~1.2.3",
+    "bootstrap": "~3.3.6",
+    "underscore": "~1.8.3",
+    "backbone.marionette": "~2.4.4",
+    "requirejs": "~2.1.22"
+  }
+}
